@@ -1,0 +1,9 @@
+{% raw %}{% extends "base.html" %}
+{% block content %}
+  <h2>Nearest OB / FVG (Crypto)</h2>
+  <form action="/nearest_ob_result" method="post">
+    <label>Limit: <input name="limit" value="100"></label><br>
+    <label>Timeframe: <input name="timeframe" value="4h"></label><br>
+    <button type="submit">Run</button>
+  </form>
+{% endblock %}{% endraw %}

@@ -1,0 +1,15 @@
+{% raw %}{% extends "base.html" %}
+{% block content %}
+  <h2>Hammer Head (Crypto)</h2>
+  <form action="/hammer_head_result" method="post">
+    <label>Limit (candles): <input name="limit" value="1"></label><br>
+    <label>Timeframe: <input name="timeframe" value="4h"></label><br>
+    <label>Include current candle:
+      <select name="current_candle">
+        <option>True</option>
+        <option>False</option>
+      </select>
+    </label><br>
+    <button type="submit">Run</button>
+  </form>
+{% endblock %}{% endraw %}

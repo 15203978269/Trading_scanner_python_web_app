@@ -1,0 +1,9 @@
+{% raw %}{% extends "base.html" %}
+{% block content %}
+  <h2>Hammer Head (PSX)</h2>
+  <form action="/psx/hammer_head_result_psx" method="post">
+    <label>Days: <input name="limit" value="7"></label><br>
+    <label>Interval: <input name="timeframe" value="1d"></label><br>
+    <button type="submit">Run</button>
+  </form>
+{% endblock %}{% endraw %}

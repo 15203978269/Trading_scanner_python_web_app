@@ -1,0 +1,9 @@
+{% raw %}{% extends "base.html" %}
+{% block content %}
+  <h2>Nearest OB Results</h2>
+  {% if message %}
+    <p>{{ message }}</p>
+  {% else %}
+    {{ tables | safe }}
+  {% endif %}
+{% endblock %}{% endraw %}
